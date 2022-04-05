@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #090A0A;
+
+  }
+
+
+
+
+
+
+
+  /* ============================= FONT ============================= */
+
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+
+
+
+
+
+
+  /* ======================= NAVBAR ======================= */
+
+  .navbar {
+    width: 100%;
+    box-shadow:none  }
+
+
+  .nav-container {
+    position: fixed;
+    top:0;
+    display: block;
+    position: relative;
+    height: 60px;
+    z-index: 2;
+  }
+
+  .navbar .menu-items {
+    display: flex;
+    background-color: white;
+    width: 100%;
+  }
+
+  .navbar .nav-container li {
+    list-style: none;
+  }
+
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #414558;
+    font-weight: 500;
+    font-size: 70px;
+    padding: 0.7rem;
+    z-index: 2;
+  }
+
+  .navbar .nav-container a:hover{
+    font-weight: bolder;
+    z-index: 2;
+    color: #090A0A;
+  }
+
+
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: black;
+  }
+
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    position: fixed;
+    top:0;
+    left:0;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= HOME ======================= */
+
+.container-fluid {
+  display:flex;
+  width:100%;
+  align-items:center;
+
+}
+
+.hero__content {
+  width: 100%;
+  margin-top: -80px;
+  color: #ffff;
+  margin:0 auto;
+  text-align: center;
+}
+
+
+.display-1,
+.display-2 {
+  font-weight: 600;
+  color: #414558;
+  padding: 0px;
+}
+
+.display-1 {
+  font-size: 200px;
+}
+
+
+
+marquee {
+  font-size: 150px;
+  color: #090A0A;
+  font-weight: 500;
+  z-index: -1;
+  margin: 0;
+}
+
+.btn-outline-dark {
+  margin-right: 20px;
+  border: 1 px solid #414558;
+  color: #414558;
+}
+
+
+.btn-dark {
+    background-color: #414558;
+}
+
+
+
+.cta-home {
+margin-top: 50px;
+}
+
+
+.me_cartoon{
+width: 200px;
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ======================= ABOUT ======================= */
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.size_page {
+    height:auto;
+    display:flex; width:100%;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 auto;
+   }
+
+
+   .contenuti-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 80px;
+    justify-content: center;
+    padding: 0;
+  }
+
+   .card.for.you {
+   display: flex;
+   width: 30%;
+   margin: auto;
+   }
+
+
+  .card-title,
+  .card-text {
+    color: #414558;
+  }
+
+
+  .card-title:hover,
+  .card-text:hover {
+  color: #414558;
+  }
+
+
+   .competenze {
+    color: #414558;
+
+  }
+
+
+
+  /*  Presentazione  */
+
+  .about_content {
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+    color: #414558;
+    margin-top: 100px;
+  }
+
+
+  .chi-sono {
+    font-weight: 500;
+    font-size: xx-large;
+  }
+
+  .img_white {
+    width: 70px;
+    padding:0;
+  }
+
+  .vertical-line {
+  width: 1px;
+  background-color: #414558;
+  height: 300px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  }
+
+  .me_cartoon{
+    width: 200px;
+    margin-top: 10px;
+  }
+
+
+
+
+  /*  Skills  */
+
+  .skills-items {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1200px;
+
+  }
+
+
+
+  .scorrimento {
+    width: 100%
+  }
+
+  .hr-skill {
+    max-width: 1200px;
+    border-top: 1px solid;
+    margin-top: 100px;
+  }
+
+
+
+  .skills {
+    height: 100px;
+    align-items:center;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    color: black;
+  }
+
+  .bloccato {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .software {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 300px;
+
+  }
+
+
+  .display-5 {
+    font-weight: 500;
+  }
+
+
+
+
+ /* ======================= PORTFOLIO ======================= */
+
+
+
+.titolo-progetto {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+ /* ======================= PROJECTS ======================= */
+
+  .titolo-project {
+    font-weight: 500;
+  }
+
+
+
+ .descrizione {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .btn-next-project {
+    margin-top: 80px;
+  }
+
+
+
+ /* ======================= CONTACT ======================= */
+
+ .title-contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+
+
+
+ .form-outline mb-4,
+ .form-control,
+ form-label{
+   width: 100%;
+ }
+
+
+ .chiocciola {
+ width: 100px;
+ margin-bottom: 40px;
+ }
+
+
+ .invia-email:hover {
+   color: white;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= FOOTER ======================= */
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+     display: flex;
+     margin: auto;
+     border-top: 1px solid black;
+     margin-top: 100px;
+  }
+
+  .d-flex-footer {
+    display: flex;
+    margin: 0 auto;
+  }
+
+
+
+  .social-nav,
+  .social-nav2,
+  .social-nav3,
+  .social-nav4 {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= MOBILE ======================= */
+
+
+
+@media only screen and (max-width:768px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+
+  marquee {
+    font-size: 75px;
+  }
+
+      .container-fluid {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .display-1 {
+          font-size: 90px;
+      }
+
+      .btn{
+        margin-top: 20px;
+        width: 450px;
+        margin: auto;
+        display: flex;
+      }
+
+
+  .contenuto-card {
+    width: 50%;
+    margin: auto;
+
+  }
+
+  .card.for.you {
+    width: 50%;
+    margin: auto;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 10px;
+  }
+
+  .size_page{
+    margin: 20px;
+    margin: auto;
+  }
+
+
+  .btn-outline-dark {
+      margin-bottom: 10px;
+  }
+
+
+
+
+
+
+
+      footer {
+        display: inline-flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 100px;
+        align-items: center;
+        border-top: 1px solid;
+        width: 100%;
+        max-width: 450px;
+        }
+
+        .p-3-footer {
+          display: flex;
+         flex-direction: column;
+          margin: auto;
+          align-items: center;
+          margin: 20px;
+        }
+
+      .me-2-footer {
+        display: inl;
+       flex-direction: column;
+        margin: auto;
+        align-items: center;
+        margin-left: 10px;
+
+      }
+
+  }
